@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>
+        cig calculator
+    </title>
+    </head>
+
+    <body>
+        <h1>
+            cig
+        </h1>
+
+<select id="cig_selector">
+    <option value="marlboro">marlboro</option>
+    <option value="winston">winston</option>
+    <option value="LM">LM</option>
+</select>
+<br>
+<input type="number" id="cigs_per_day" placeholder="cigarettes per day">
+     OR
+<input id="packs_per_month" type="number" size="35" placeholder="packs per month"></p>
+
+<input type="number" id="years" placeholder="number of years">
+<br>
+<button type="button" onclick="numberOfCigarettes()">Calculate</button>
+<p>Number of cigarettes smoked: </p>
+<p id="num_smoked_result">0</p>
+
+<input type="number" id="price_per_pack" placeholder="price per pack $">
+<br>
+<button type="button" id="amount" onclick="moneySpent()">Calculate</button>
+<p> $ Spent: </p> 
+<p id="amount_spent">0</p>
+
+<script src="javascript.js"></script>
+    </body>
+
+</html>
